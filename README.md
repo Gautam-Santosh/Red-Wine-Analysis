@@ -214,7 +214,7 @@ prefs = {'alcohol': 10.0, 'volatile.acidity': 0.5, 'pH': 3.5}
 ```
 Red-Wine-Analysis/
 │
-├── 📓 Red_Wine_documented.ipynb        # Main notebook (with explanations)
+├── 📓 Red_Wine_Analysis.ipynb        # Main notebook (with explanations)
 ├── 📄 README.md                        # This file
 ├── 📦 requirements.txt                 # Python dependencies
 ├── 🚫 .gitignore                       # Files Git should ignore
