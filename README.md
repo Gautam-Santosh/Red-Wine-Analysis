@@ -81,7 +81,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-Open `Red_Wine_documented.ipynb` and run all cells. ✅
+Open `Red_Wine_Analysis.ipynb` and run all cells. ✅
 
 ---
 
