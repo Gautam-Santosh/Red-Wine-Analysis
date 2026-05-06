@@ -1,0 +1,70 @@
+# ===============================
+# Jupyter Notebook
+# ===============================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ===============================
+# Python
+# ===============================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===============================
+# Virtual environments
+# ===============================
+venv/
+env/
+.venv/
+ENV/
+.env
+
+# ===============================
+# IDE & Editor settings
+# ===============================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ===============================
+# OS-specific files
+# ===============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===============================
+# Logs and temp files
+# ===============================
+*.log
+logs/
+tmp/
+
+# ===============================
+# Distribution / packaging
+# ===============================
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===============================
+# Project-specific
+# ===============================
+# Uncomment if your dataset is huge (>50 MB)
+# data/*.csv
+
+# Uncomment if you don't want to track trained models
+# *.pkl
+# outputs/*.pkl
+
+# Secrets — NEVER commit these
+*.key
+*.pem
+secrets.json
+config.local.json
