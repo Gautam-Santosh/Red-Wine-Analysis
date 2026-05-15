@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🍷 Red Wine Analysis — Discovering Wine Personalities
+#  Red Wine Analysis — Discovering Wine Personalities
 
 ### Clustering, Quality Prediction & Recommendation Engine on 1,599 Red Wines
 
@@ -19,35 +19,35 @@
 This project explores **1,599 red wines** through a complete data science workflow — from cleaning and clustering to quality prediction and building a working recommendation engine.
 
 It demonstrates how raw chemistry data can be turned into **actionable business insights** for a wine company:
-- 🍷 What "personalities" of wine exist in our portfolio?
-- 🏆 What chemistry makes a wine GOOD?
-- 🤖 Can we predict wine quality automatically?
-- 💡 Can we recommend wines based on customer preferences?
+-  What "personalities" of wine exist in our portfolio?
+-  What chemistry makes a wine GOOD?
+-  Can we predict wine quality automatically?
+-  Can we recommend wines based on customer preferences?
 
-> 🎯 **Result:** Built a **90% accurate quality classifier**, identified the **top 3 quality drivers**, segmented wines into **4 clear personality groups**, and developed a **working recommendation engine**.
+>  **Result:** Built a **90% accurate quality classifier**, identified the **top 3 quality drivers**, segmented wines into **4 clear personality groups**, and developed a **working recommendation engine**.
 
 ---
 
-## 🎯 Main Findings
+##  Main Findings
 
-### 🍷 The 4 Wine Personalities (discovered via K-Means clustering)
+###  The 4 Wine Personalities (discovered via K-Means clustering)
 
 | Cluster | Personality | Defining Traits | Avg Quality |
 |---------|-------------|-----------------|-------------|
-| 🥇 | **Premium Reserve** ⭐ | High alcohol, low preservatives, clean taste | **Highest** |
-| 🥈 | **Smooth & Mellow** | Low acidity, balanced, easy-drinking | Average |
-| 🥉 | **Tart & Fruity** | High acidity, citric notes, refreshing | Average |
-| ⚠️ | **Mass-Market Preserved** | High sulfites, low alcohol | **Lowest** |
+|  | **Premium Reserve** ⭐ | High alcohol, low preservatives, clean taste | **Highest** |
+|  | **Smooth & Mellow** | Low acidity, balanced, easy-drinking | Average |
+|  | **Tart & Fruity** | High acidity, citric notes, refreshing | Average |
+|  | **Mass-Market Preserved** | High sulfites, low alcohol | **Lowest** |
 
-### 🏆 Top Quality Drivers (from Random Forest)
+### Top Quality Drivers (from Random Forest)
 
 | Rank | Feature | Effect on Quality |
 |------|---------|-------------------|
-| 🥇 | **Alcohol** | Higher alcohol → better wine |
-| 🥈 | **Volatile Acidity** | Lower = better (high = vinegar taste) |
-| 🥉 | **Sulphates** | Moderate amounts improve preservation |
+|  | **Alcohol** | Higher alcohol → better wine |
+|  | **Volatile Acidity** | Lower = better (high = vinegar taste) |
+|  | **Sulphates** | Moderate amounts improve preservation |
 
-### 💡 Key Insights
+### Key Insights
 
 1. **Alcohol is the #1 quality predictor** — Premium wines consistently have higher alcohol content
 2. **Volatile acidity is the #1 quality killer** — keep it low to avoid that vinegary taste
@@ -55,11 +55,11 @@ It demonstrates how raw chemistry data can be turned into **actionable business 
 4. **Wine data is mostly homogeneous** — DBSCAN found no sharp natural divisions (one big blob with outliers)
 5. **K-Means imposes useful structure** — even without natural clusters, segmentation helps marketing & strategy
 
-> 💼 **Practical takeaway:** To produce premium wine, focus on **higher alcohol fermentation** and **minimize sulfite preservatives**.
+> **Practical takeaway:** To produce premium wine, focus on **higher alcohol fermentation** and **minimize sulfite preservatives**.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 
@@ -85,7 +85,7 @@ Open `Red_Wine_Analysis.ipynb` and run all cells. ✅
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 **Wine Quality (Red Wine) dataset** — 1,599 wines with 11 chemistry features and 1 quality score.
 
@@ -115,7 +115,7 @@ Open `Red_Wine_Analysis.ipynb` and run all cells. ✅
 
 ---
 
-## 🛠️ Workflow
+## Workflow
 
 ```mermaid
 graph LR
@@ -150,7 +150,7 @@ graph LR
 
 ---
 
-## 🧠 Techniques Used
+##  Techniques Used
 
 ### Unsupervised Learning
 - **PCA** — compress 11 features into 2 visualizable components
@@ -176,7 +176,7 @@ graph LR
 
 ---
 
-## 📊 Results
+## Results
 
 ### Wine Quality Classifier (Random Forest)
 
@@ -201,7 +201,7 @@ The notebook includes a working recommender that takes customer preferences and 
 
 ```python
 prefs = {'alcohol': 12.5, 'volatile.acidity': 0.3, 'pH': 3.4}
-→ Recommended: Premium Reserve 🥇
+→ Recommended: Premium Reserve 
 
 prefs = {'alcohol': 10.0, 'volatile.acidity': 0.5, 'pH': 3.5}
 → Recommended: Smooth & Mellow
@@ -214,10 +214,10 @@ prefs = {'alcohol': 10.0, 'volatile.acidity': 0.5, 'pH': 3.5}
 ```
 Red-Wine-Analysis/
 │
-├── 📓 Red_Wine_Analysis.ipynb        # Main notebook (with explanations)
-├── 📄 README.md                        # This file
-├── 📦 requirements.txt                 # Python dependencies
-├── 🚫 .gitignore                       # Files Git should ignore
+├── Red_Wine_Analysis.ipynb        # Main notebook (with explanations)
+├── README.md                        # This file
+├── requirements.txt                 # Python dependencies
+├── .gitignore                       # Files Git should ignore
 │
 ├── 📂 data/
 │   └── wineQualityReds.csv             # Wine dataset (1,599 rows)
@@ -231,7 +231,7 @@ Red-Wine-Analysis/
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 - **Language:** Python 3.10+
 - **Data handling:** pandas, numpy
@@ -243,7 +243,7 @@ Red-Wine-Analysis/
 
 ---
 
-## 🎓 What I Learned
+##  What I Learned
 
 - ✅ Complete **unsupervised learning** workflow (PCA → clustering → profiling)
 - ✅ How to **interpret clusters** and turn them into business personas
@@ -262,12 +262,12 @@ If deployed at a wine company, this project enables:
 
 | Application | How |
 |-------------|-----|
-| 🎯 **Product positioning** | Use cluster names ("Premium Reserve", etc.) for marketing |
-| 🏆 **Quality control** | Predict if a new batch will score well before bottling |
-| 💰 **Pricing strategy** | Premium Reserve wines justify higher prices |
-| 🍇 **Recipe optimization** | Target Premium Reserve chemistry profiles |
-| 🤖 **Customer-facing app** | Recommend wines based on user preferences |
-| ⚠️ **Defect detection** | Flag wines with high volatile acidity early |
+|  **Product positioning** | Use cluster names ("Premium Reserve", etc.) for marketing |
+|  **Quality control** | Predict if a new batch will score well before bottling |
+|  **Pricing strategy** | Premium Reserve wines justify higher prices |
+|  **Recipe optimization** | Target Premium Reserve chemistry profiles |
+|  **Customer-facing app** | Recommend wines based on user preferences |
+|  **Defect detection** | Flag wines with high volatile acidity early |
 
 ---
 
